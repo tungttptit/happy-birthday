@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Confetti from "react-confetti";
-import { Button } from "@/components/ui/button";
 
 export default function BirthdayPage() {
   const handlePlay = () => {
@@ -12,9 +11,9 @@ export default function BirthdayPage() {
       <Confetti />
       <h1 className="text-5xl font-bold text-pink-600 mb-4">Happy Birthday!</h1>
       <p className="text-xl text-gray-800 mb-6">Chúc mừng sinh nhật a Tuấn Anh 🎉🎂</p>
-      <Button onClick={handlePlay} className="bg-purple-500 text-white px-4 py-2 rounded-lg">
+      <button onClick={handlePlay} className="bg-purple-500 text-white px-4 py-2 rounded-lg">
         Phát nhạc 🎶
-      </Button>
+      </button>
     </div>
   );
 }
